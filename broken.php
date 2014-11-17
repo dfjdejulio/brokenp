@@ -21,7 +21,7 @@ echo "Result: $result";
 ?><hr/><?php } ?>
 <form type="get">
 URL:
-<input type="text" name="url" value="<?= $get ?>" style="width:100%;"/>
+<input type="text" name="url" value="<?= $my_url ?>" style="width:100%;"/>
 <input type="submit"/>
 </form>
 </body>
