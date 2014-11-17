@@ -14,6 +14,7 @@ $ch = curl_init($my_url);
 curl_setopt($ch, CURLOPT_FAILONERROR, TRUE);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
 curl_setopt($ch, CURLOPT_FRESH_CONNECT, TRUE);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 $result = curl_exec($ch);
 
 if (!$result) {
