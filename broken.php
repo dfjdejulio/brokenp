@@ -16,8 +16,9 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
 curl_setopt($ch, CURLOPT_FRESH_CONNECT, TRUE);
 $result = curl_exec($ch);
 
-echo "Result: $result";
-
+if (!$result) {
+echo "Go get a grown-up.";
+}
 ?><hr/><?php } ?>
 <form type="get">
 URL:
