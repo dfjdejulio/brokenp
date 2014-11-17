@@ -8,7 +8,10 @@
 <hr/>
 <?php
 $get = $_GET["url"];
-?>
+if ($get) { ?>
+Stuff goes here.
+<hr/>
+<?php } ?>
 <form>
 URL:
 <input type="text" name="url" value="<?= $get ?>" style="width:100%;"/>
