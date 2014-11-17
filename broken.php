@@ -11,7 +11,7 @@ $get = $_GET["url"];
 ?>
 <form>
 URL:
-<input type="text" name="url" value="$get" style="width:100%;"/>
+<input type="text" name="url" value="<?= $get ?>" style="width:100%;"/>
 <input type="submit"/>
 </form>
 </body>
