@@ -16,10 +16,14 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
 curl_setopt($ch, CURLOPT_FRESH_CONNECT, TRUE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
 $result = curl_exec($ch);
+curl_close($ch);
 
 if (!$result) {
 echo "Go get a grown-up.";
+} else {
+echo "All is well.";	
 }
+
 ?><hr/><?php } ?>
 <form type="get">
 URL:
